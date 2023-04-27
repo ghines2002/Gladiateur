@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <center><h4 class="modal-title" id="myModalLabel">Edit Member</h4></center>
+                <center><h4 class="modal-title" id="myModalLabel">Edit member</h4></center>
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
@@ -12,7 +12,15 @@
 				<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label modal-label">Firstname:</label>
+						<label class="control-label modal-label">ID_rec:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="ID_rec" value="<?php echo $row['ID_rec']; ?>">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label modal-label">firstname:</label>
 					</div>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" name="firstname" value="<?php echo $row['firstname']; ?>">
@@ -20,18 +28,10 @@
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label modal-label">Lastname:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="lastname" value="<?php echo $row['lastname']; ?>">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-sm-2">
 						<label class="control-label modal-label">Address:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="address" value="<?php echo $row['address']; ?>">
+						<input type="text" class="form-control" name="Address" value="<?php echo $row['Address']; ?>">
 					</div>
 				</div>
 
@@ -41,7 +41,16 @@
 						<label class="control-label modal-label">Phone:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="phone" value="<?php echo $row['Phone']; ?>">
+						<input type="text" class="form-control" name="Phone" value="<?php echo $row['Phone']; ?>">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label modal-label">Message_rec:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="Message_rec" value="<?php echo $row['Message_rec']; ?>">
 					</div>
 				</div>
 
@@ -50,7 +59,7 @@
 						<label class="control-label modal-label">Email:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="email" value="<?php echo $row['Email']; ?>">
+						<input type="text" class="form-control" name="Email" value="<?php echo $row['Email']; ?>">
 					</div>
 				</div>
 
@@ -82,11 +91,11 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <center><h4 class="modal-title" id="myModalLabel">Delete Member</h4></center>
+                <center><h4 class="modal-title" id="myModalLabel">Delete member</h4></center>
             </div>
             <div class="modal-body">	
             	<p class="text-center">Are you sure you want to Delete</p>
-				<h2 class="text-center"><?php echo $row['firstname'].' '.$row['lastname']; ?></h2>
+				<h2 class="text-center"><?php echo $row['ID_rec'].' '.$row['firstname']; ?></h2>
 			</div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>

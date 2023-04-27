@@ -32,7 +32,7 @@
             <div class="topbar-left">
                 <a href="index.html" class="logo">
                     <span class="logo-light">
-                            <i class="mdi mdi-camera-control"></i> GreenHouse
+                            <i class="mdi mdi-camera-control"></i> Green House
                         </span>
                     <span class="logo-sm">
                             <i class="mdi mdi-camera-control"></i>
@@ -169,7 +169,7 @@
                         
                     
                         <li>
-                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-paper-sheet"></i><span> USER <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="icon-paper-sheet"></i><span> Reclamation <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                             <ul class="submenu">
                                 <li><a href="pages-login.html">Login</a></li>
                                 <li><a href="pages-register.html">Register</a></li>
@@ -221,7 +221,7 @@
 
                     <div class="container">
                     <div class="container">
-	<h1 class="page-header text-center">User Management</h1>
+	<h1 class="page-header text-center">Reclamation Management</h1>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 			<div class="row">
@@ -258,12 +258,12 @@
 				<table id="myTable" class="table table-bordered table-striped">
 					<thead>
 						<th>ID</th>
-						<th>Firstname</th>
-						<th>Lastname</th>
-						<th>Address</th>
+						<th>ID_rec</th>
+                        <th>firstname</th>
+                        <th>Address</th>
                         <th>Phone</th>
+						<th>Message_rec</th>
                         <th>Email</th>
-                        <th>Role</th>
                         <th>Action</th>
 
 
@@ -280,12 +280,13 @@
 								echo 
 								"<tr>
 									<td>".$row['id']."</td>
+									<td>".$row['ID_rec']."</td>
 									<td>".$row['firstname']."</td>
-									<td>".$row['lastname']."</td>
-									<td>".$row['address']."</td>
+                                    <td>".$row['Address']."</td>
                                     <td>".$row['Phone']."</td>
+									<td>".$row['Message_rec']."</td>
                                     <td>".$row['Email']."</td>
-                                    <td>".$row['Role']."</td>
+                                   
 									<td>
 										<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Edit</a>
 										<a href='#delete_".$row['id']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Delete</a>
@@ -301,9 +302,9 @@
 							// 	echo
 							// 	"<tr>
 							// 		<td>".$row['id']."</td>
+							// 		<td>".$row['ID_rec']."</td>
 							// 		<td>".$row['firstname']."</td>
-							// 		<td>".$row['lastname']."</td>
-							// 		<td>".$row['address']."</td>
+							// 		<td>".$row['Message_rec']."</td>
 							// 		<td>
 							// 			<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Edit</a>
 							// 			<a href='#delete_".$row['id']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Delete</a>

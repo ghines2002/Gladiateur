@@ -10,8 +10,24 @@
 			<div class="container-fluid">
 			<form method="POST" action="add.php">
 				<div class="row form-group">
+
+				    <div class="col-sm-2">
+						<label class="control-label modal-label">ID :</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="id" required>
+					</div>
+					
 					<div class="col-sm-2">
-						<label class="control-label modal-label">Firstname:</label>
+						<label class="control-label modal-label">ID_rec:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="ID_rec" required>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label modal-label">firstname:</label>
 					</div>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" name="firstname" required>
@@ -19,18 +35,10 @@
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label modal-label">Lastname:</label>
+						<label class="control-label modal-label">Adresse:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="lastname" required>
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label modal-label">Address:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="address" required>
+						<input type="text" class="form-control" name="Address" required>
 					</div>
 				</div>
 
@@ -39,11 +47,19 @@
 						<label class="control-label modal-label">Phone:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="phone" required>
+						<input type="text" class="form-control" name="Phone" required>
 					</div>
 				</div>
 
 
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label modal-label">Message_rec:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="Message_rec" required>
+					</div>
+				</div>
 
 
 				<div class="row form-group">
@@ -51,7 +67,7 @@
 						<label class="control-label modal-label">Email:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="email" required>
+						<input type="text" class="form-control" name="Email" required>
 					</div>
 				</div>
 

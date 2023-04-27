@@ -11,8 +11,8 @@
 			<tr>
 				<td>".$row['id']."</td>
 				<td>".$row['firstname']."</td>
-				<td>".$row['lastname']."</td>
-				<td>".$row['address']."</td>
+				<td>".$row['Address']."</td>
+				<td>".$row['Message_rec']."</td>
 			</tr>
 			";
 		}
@@ -25,8 +25,8 @@
 		// 	<tr>
 		// 		<td>".$row['id']."</td>
 		// 		<td>".$row['firstname']."</td>
-		// 		<td>".$row['lastname']."</td>
-		// 		<td>".$row['address']."</td>
+		// 		<td>".$row['Address']."</td>
+		// 		<td>".$row['Message_rec']."</td>
 		// 	</tr>
 		// 	";
 		// }
@@ -58,7 +58,7 @@
            <tr>  
                 <th width="5%">ID</th>
 				<th width="20%">Firstname</th>
-				<th width="20%">Lastname</th>
+				<th width="20%">Address</th>
 				<th width="55%">Address</th> 
            </tr>  
       ';  
