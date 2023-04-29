@@ -171,7 +171,7 @@
                         <li>
                             <a href="javascript:void(0);" class="waves-effect"><i class="icon-paper-sheet"></i><span> Reclamation <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                             <ul class="submenu">
-                                <li><a href="pages-login.html">Login</a></li>
+                                <li><a href="Responses.php">Response Managment</a></li>
                                 <li><a href="pages-register.html">Register</a></li>
                                 
                             </ul>
